@@ -1,0 +1,334 @@
+@import "components.scss";
+.container{
+	background: url(../img/headimg.png) 0 0 no-repeat;
+	background-size: cover;
+	& .row{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		width: 905px;
+		margin: 0 auto;
+		&__head{
+			font-size: 46px;
+			color: #fff;
+		}
+	}
+}
+.perspective{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: left;
+		& .content{
+			display: flex;
+			align-items: center;
+			text-align: left;
+			width: 32%;
+			&__icon1{
+				background:transparent url("../img/icon1.png") 0 0 no-repeat;
+			}	
+			&__icon2{
+				background:transparent url("../img/icon2.png") 0 0 no-repeat;
+			}	
+			&__icon3{
+				background:transparent url("../img/icon3.png") 0 0 no-repeat;
+			}	
+			&__icon_position{
+				padding: 26px;
+				margin-right: 10px;
+			}
+			&__text{
+				font-size: 15px;
+				color: #fff;
+			}
+		}
+	}
+	.form-message{
+		& .inner{
+			background: url("../img/line-form.png") 50% 7% no-repeat;
+			padding-bottom: 8em;
+		}
+		&__head{
+			font-size: 21px;
+			text-transform: uppercase;
+			color: #fff;
+		}
+		& .form{
+			margin-top: 37px;
+			&__input{
+				padding: 15px 110px 15px 35px;
+				border-radius: 28px;
+				background-color: #fff;
+				outline: none;
+				margin-right: 10px;
+				&_icon-name{
+					background: #fff url("../img/name-form.png") 3% 50% no-repeat;
+				}
+				&_icon-phone{
+					background: #fff url("../img/phone-form.png") 3% 55% no-repeat;
+				}
+			}
+			& input[type="submit"]{
+				padding: 20px 30px;
+				border-radius: 30px;
+				background: #7ad66c ;
+				outline: none;
+				border: none;
+				color: #fff;
+				margin: 25px 0 -10px 0px;
+				transition: all 0.3s;
+				&:hover{
+					background-color: $bghover;
+					box-shadow: 0 0 5px 1px $bghover;
+				}
+			}
+		}
+	}
+
+.head{
+	font-size: 32px;
+	margin-top: 50px;
+	font-weight: 500;
+}
+.col{
+	display: flex;
+	justify-content: center;
+	text-align: left;
+}
+.wrap{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 20px;
+	padding-bottom: 40px;
+	& .product{
+		margin-right: 30px;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		&__block{
+			width: 264px;
+			height: 200px;
+			overflow: hidden;
+			&__img{
+				transition: $trans-img;
+				&:hover{
+					transform: scale(1.1);
+				}
+			}
+		}
+		&__title{
+			font-size: 18px;
+			font-weight: bold;
+			margin: 10px 0;
+		}
+		&__btn{
+			display: inline-block;
+			margin-top: 20px;
+			padding: 15px 20px;
+			border-radius: 30px;
+			background-color: $bgButton;
+			transition: all 0.3s;
+			&:hover{
+				background-color: $bghover;
+				box-shadow: 0 0 5px 1px $bghover;
+			}
+		}
+	}
+}
+.wrap_bg{
+	background-color: #f5f6f7;
+}
+.summary{
+	display: flex;
+	margin-right: 35px;
+	transition: $trans-shadow;
+	&:hover{
+		box-shadow: $box-shadow;
+
+	}
+	&__icon1{
+		background: url("../img/problem1.png") 0 0 no-repeat;
+		padding: 0px 30px;
+	}
+	&__icon2{
+		background: url("../img/problem2.png") 0 0 no-repeat;
+		padding: 0px 30px;
+	}
+	&__icon3{
+		background: url("../img/problem3.png") 0 0 no-repeat;
+		padding: 0px 30px;
+	}
+	&__icon-staff1{
+		background: url("../img/staff1.png") 0 0 no-repeat;
+		padding: 0px 30px;
+	}
+	&__icon-staff2{
+		background: url("../img/staff2.png") 0 0 no-repeat;
+		padding: 0px 30px;
+	}
+	&__icon-staff3{
+		background: url("../img/staff3.png") 0 0 no-repeat;
+		padding: 0px 30px;
+	}
+	&__title{
+		font-size: 14px;
+		width: 300px;
+		&__head{
+			font-size: 16px;
+			color:#7ad66c;
+			margin-bottom: 10px;
+			margin-top: 0px;
+		}
+		&__text{
+			font-size: 14px;
+		}
+		&__list{
+			margin: 10px 0 0 20px;
+			&__item{
+				margin-bottom: 10px;
+				position: relative;
+				&::before{
+					content: "";
+					position: absolute;
+					left: -10px;
+					top: 6px;
+					width: 5px;
+					height: 5px;
+					background-color: $colh3;
+					border-radius: 50%;
+				}
+			}
+		}
+	}
+}
+.wrap_width{
+	max-width: 1150px;
+	margin: 0 auto;
+}
+.control{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(4,300px);
+	grid-gap: 30px;
+	grid-template-areas: 
+	"img1 title1"
+	"title2 img2"
+	"img3 title3"
+	"title4 img4";
+	    overflow: hidden;
+	&__img1{
+		grid-area: img1;
+		background: url("../img/control1.png") 0 0px no-repeat;
+	}
+	&__img2{
+		grid-area: img2;
+		background: url("../img/control2.png") 0 0px no-repeat;
+	}
+	&__img3{
+		grid-area: img3;
+		background: url("../img/control3.png") 0 0px no-repeat;
+	}
+	&__img4{
+		grid-area: img4;
+		background: url("../img/control4.png") 0 0px no-repeat;
+	}
+	    &__img1,
+	    &__img2,
+	    &__img3,
+	    &__img4{
+background-size: cover;
+transition: $trans-img;
+&:hover{
+	transform: scale(1.1);
+}
+	    }
+	&__title{
+		line-height: 1.5;
+		padding:10px;
+		&__head{
+			font-size: 21px;
+			color: $colh3;
+			margin-bottom: 10px;
+		}
+		&__text{
+			font-size: 15px;
+		}
+		&_namber1{
+			grid-area: title1;
+		}
+		&_namber2{
+			grid-area: title2;
+		}
+		&_namber3{
+			grid-area: title3;
+		}
+		&_namber4{
+			grid-area: title4;
+		}
+	}
+}
+.help{
+	display: grid;
+	grid-template-columns: 0.8fr 1fr 1fr 1fr;
+	max-width: 1170px;
+	margin: 40px auto 0 auto;
+	padding-bottom: 75px;
+	&__head{
+		font-size: 30px;
+		color: $colh3;
+		align-self: center;
+	}
+}
+.specialization{
+	max-width: 260px;
+	transition: $trans-shadow;
+	padding: 5px;
+	&:hover{
+box-shadow: $box-shadow;
+	}
+	&__head{
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+	&text{
+		font-size: 13px;
+	}
+}
+.container_fluid{
+	background: url(../img/car-btn.png) 0 0 no-repeat;
+	& .form-message{
+		    padding-bottom: 80px;
+	}
+}
+.row__door_head{
+	color: #fff;
+	font-size: 32px;
+	    margin-top: 3em;
+}
+.inform{
+display: grid;
+grid-template-columns: 1fr 0.95fr;
+grid-column-gap: 48px;
+padding-bottom: 90px;
+	& .map{
+		width: 655px;
+		height: 400px;
+		border: none;
+	}
+	& .info-office{
+		    align-self: center;
+		   &__head{
+		   	font-size: 18px;
+		   	margin: 0;
+		   	    font-weight: 500;
+		   } 
+		   &__text{
+		   	font-size: 15px;
+		   	margin-bottom: 15px;
+		   }
+	}
+}

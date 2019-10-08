@@ -1,0 +1,36 @@
+.footer-wrap{
+	background: #f2f2f2;
+	padding: 35px 0;
+}
+.footer{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		& .list{
+			display: flex;
+			&__item{
+				margin-right: 55px;
+				font-size: 14px;
+				position: relative;
+				&::after{
+				content: "";
+				display: inline-block;
+				width: 100%;
+				height: 1px;
+				position: absolute;
+				bottom: 50%;
+				left: 0;
+				right: 0;
+				border-bottom: 1px solid #bcbcbc;
+transform: scale(0);
+transition: $trans-shadow;
+			}
+			&:hover::after{
+transform: scale(1);
+}
+				&__done{
+					color: $colh3;
+				}
+			}
+		}
+	}

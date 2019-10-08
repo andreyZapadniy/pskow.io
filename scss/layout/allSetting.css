@@ -1,0 +1,24 @@
+body {
+  padding: 0;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif; }
+
+a {
+  color: #fff;
+  text-decoration: none; }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+p {
+  margin: 0; }
+
+.active {
+  padding: 5px;
+  border-bottom: 1px solid #bcbcbc;
+  box-shadow: 0px 1px 5px 0px #e1dcdc;
+  border-radius: 5px; }
+
+/*# sourceMappingURL=allSetting.css.map */
